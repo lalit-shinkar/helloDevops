@@ -19,7 +19,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    docker.image('hellodevops').run('-p 5050:5000')
+                    docker.image('hellodevops').run('-p 5050:5050')
                 }
             }
         }
